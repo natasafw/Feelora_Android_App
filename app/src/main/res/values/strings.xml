@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Feelora</string>
+    <string name="send">Send</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="judulartikel2">Tanda-Tanda Gejala Kecemasan yang Perlu Dikenali</string>
+    <string name="judulartikel1">Memahami dan Menghadapi Monster Dalam Diri</string>
+    <string name="isiartikel1">Kecemasan adalah reaksi alami tubuh kita terhadap tekanan dan ketegangan. Namun, ketika perasaan ini mengganggu rutinitas sehari-hari, penting untuk mengenali dan memahami bahwa kita tidak sendirian. Menghadapi kecemasan bukanlah tanda kelemahan; melainkan langkah berani menuju kesehatan mental yang lebih baik. Mari kita bersama-sama memahami kecemasan dan menjadikannya sahabat yang dapat kita kelola, bukan musuh yang harus kita takuti.</string>
+    <string name="isiartikel2">Kecemasan bisa muncul dalam berbagai bentuk, mulai dari rasa gelisah hingga detak jantung yang berdebar-debar. Mengetahui gejala kecemasan adalah langkah awal yang penting dalam perjalanan menuju pengelolaan diri. Jangan biarkan ketidakpastian menguasai hidupmu! Jika kamu merasakan tanda-tanda ini, ingatlah bahwa mencari bantuan adalah langkah yang penuh keberanian, dan ada banyak cara untuk menemukan ketenangan dalam kekacauan.</string>
+    <string name="judulartikel3">Strategi Cerdas untuk Mengatasi Kecemasan: Ambil Kendali Sekarang!</string>
+    <string name="isiartikel3">Mengatasi kecemasan tidak harus rumit! Dengan beberapa strategi sederhana, kamu bisa mengambil kendali kembali atas hidupmu. Cobalah latihan pernapasan dalam untuk menenangkan pikiran, atau nikmati meditasi untuk menemukan pusat ketenangan. Olahraga teratur bukan hanya baik untuk tubuh, tetapi juga untuk jiwa. Jangan ragu untuk berbagi perasaan dengan orang terdekat; dukungan sosial adalah kekuatan yang tak ternilai. Dengan langkah kecil ini, kamu bisa menjadikan kecemasan sebagai bagian dari perjalananmu menuju kesehatan mental yang lebih baik.</string>
+    <string name="syarat_penggunaan">Dengan menggunakan aplikasi Feelora, Anda setuju untuk menggunakan platform ini sesuai dengan ketentuan yang telah kami tetapkan. Setiap penyalahgunaan aplikasi, seperti penyebaran konten berbahaya atau pelanggaran hukum, dapat mengakibatkan penutupan akun.</string>
+    <string name="kebijakan_privasi">Kami menghargai privasi Anda. Semua data yang Anda bagikan dengan Feelora akan disimpan dengan aman dan dienkripsi. Kami tidak akan membagikan informasi pribadi Anda dengan pihak ketiga tanpa persetujuan Anda, kecuali diwajibkan oleh hukum.</string>
+    <string name="delete">delete</string>
+</resources>

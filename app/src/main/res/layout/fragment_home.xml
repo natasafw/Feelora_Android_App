@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".main.home.HomeFragment">
+
+        <!-- CardView Auto Slider -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewAutoSlider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/autoSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Worm Dots -->
+        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:dotsColor="@color/pinktua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardViewAutoSlider" />
+
+        <!-- ConstraintLayout for Emotion Selection -->
+
+        <!-- Menu Grid -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dots_indicator">
+
+            <!-- CardView to Hold Content -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!-- ConstraintLayout inside CardView -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_background"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="5dp">
+
+                    <!-- TextView for the question -->
+                    <TextView
+                        android:id="@+id/feeling_question"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/urbanist_bold"
+                        android:gravity="center"
+                        android:text="Bagaimana perasaanmu hari ini?"
+                        android:textColor="@color/pinktua"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- LinearLayout for emoji icons -->
+                    <LinearLayout
+                        android:id="@+id/emotion_icons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/feeling_question">
+
+                        <!-- Emoji Icons -->
+                        <ImageView
+                            android:id="@+id/emoji_happy"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="8dp"
+                            android:contentDescription="Bahagia"
+                            android:src="@drawable/ic_emoji_happy" />
+
+                        <ImageView
+                            android:id="@+id/emoji_smile"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="8dp"
+                            android:contentDescription="Senang"
+                            android:src="@drawable/ic_emoji_smile" />
+
+                        <ImageView
+                            android:id="@+id/emoji_neutral"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="8dp"
+                            android:contentDescription="Netral"
+                            android:src="@drawable/ic_emoji_neutral" />
+
+                        <ImageView
+                            android:id="@+id/emoji_sad"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="8dp"
+                            android:contentDescription="Sedih"
+                            android:src="@drawable/ic_emoji_sad" />
+
+                        <ImageView
+                            android:id="@+id/emoji_crying"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="8dp"
+                            android:contentDescription="Sangat Sedih"
+                            android:src="@drawable/ic_emoji_crying" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/grid_menu_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <include
+                android:id="@+id/includeMenuHomeGrid"
+                layout="@layout/home_menu_grid" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Community Banner -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/community_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grid_menu_home">
+
+            <!-- CardView to Hold Content -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewCommunityBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp">
+
+                <!-- ConstraintLayout inside CardView -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_background"
+                    android:padding="16dp">
+
+                    <!-- ImageView for illustration on the left -->
+                    <ImageView
+                        android:id="@+id/community_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:contentDescription="Community Illustration"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gambar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- TextView for the central message -->
+                    <TextView
+                        android:id="@+id/community_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/urbanist_bold"
+                        android:gravity="center"
+                        android:text="Merasa Sendiri? Ayo Join Komunitas Kami!"
+                        android:textColor="@color/pinktua"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@id/btnWebView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/community_image"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Button for the link -->
+                    <Button
+                        android:id="@+id/btnWebView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="@color/pinktua"
+                        android:text="komunitas.feelora.com"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/community_image"
+                        app:layout_constraintTop_toBottomOf="@id/community_text" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Recycler Horizontal -->
+        <LinearLayout
+            android:id="@+id/layout_newsHori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/community_banner">
+
+            <include android:id="@+id/loading_newVertical"
+                layout="@layout/item_loading"
+                android:visibility="gone"/>
+
+            <include android:id="@+id/error_newVertical"
+                layout="@layout/item_error"
+                android:visibility="gone"/>
+
+            <include android:id="@+id/empty_newVertical"
+                layout="@layout/item_empty"
+                android:visibility="gone"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/newsHorizontalList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:listitem="@layout/home_new_item_horizontal" />
+        </LinearLayout>
+
+        <!-- Button Next -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/pinktua"
+            android:fontFamily="@font/urbanist_bold"
+            android:text="Next"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_newsHori" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
